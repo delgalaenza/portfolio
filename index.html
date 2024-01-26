@@ -307,7 +307,13 @@
       cursor: pointer;
     }
 
+    .servicesList {
+      display: flex; 
+      gap: 40px; 
+      font-size: larger;
+    }
 
+    /* MOBILE */
     @media (max-width:570px) {
       h1 {
         font-size: 1.5em;
@@ -341,6 +347,16 @@
         width: 120px;
         max-height: 120px;
       }
+
+      .servicesList{
+        flex-direction: column;
+        gap: 20px;
+        margin-bottom: 0;
+      }
+
+      .curve {
+        display: none;
+      }
     }
 
     @media only screen and (max-width: 700px) {
@@ -369,7 +385,7 @@
       </div>
     </div>
     <h2>Freelance Web Developer 🏖️</h2>
-      <ul  style="display: flex; gap: 40px; font-size: larger;" class="slide-in">
+      <ul  class="servicesList" class="slide-in">
         <li>Websites</li>
         <li>Web applications</li>
         <li>Mobile applications</li>
@@ -384,13 +400,13 @@
         </span></a>
       </div>
     </div>
-    <div class="curve"></div>
+<!--     <div class="curve"></div> -->
   </section>
 
-  <section class="portfolio">
+<!--   <section class="portfolio">
     <h1 class="works">works</h1>
     <p>In progress...</p>
-  </section>
+  </section> -->
 </body>
 
 </html>
