@@ -1,0 +1,8 @@
+Sito Portfolio:
+
+
+EXTRA:
+	- supportare dark mode
+	- supportare multilingua (it e eng)
+	
+	
