@@ -308,18 +308,41 @@
     }
 
     .servicesList {
-      display: flex; 
-      gap: 40px; 
+      display: flex;
+      gap: 40px;
       font-size: larger;
+      font-style: italic;
+    }
+
+    .clients {
+      width: 100%;
+    }
+
+    .roundedImage {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+    }
+
+    .bannerClients {
+      width: 100%;
+      height: 100px;
+      overflow: hidden;
+    }
+
+    .bannerClients>marquee>img {
+      margin-right: 20px;
+      width: 100px;
+      height: 100px;
     }
 
     /* MOBILE */
     @media (max-width:570px) {
       h1 {
-        font-size: 1.5em;
+        font-size: 2.2em;
       }
 
-      h2 {
+      /*       h2 {
         font-size: 1em;
       }
 
@@ -331,7 +354,7 @@
       .top-header>div>a>img {
         height: 25px;
         width: 25px;
-      }
+      } */
 
       .fade-in {
         opacity: 0;
@@ -348,14 +371,20 @@
         max-height: 120px;
       }
 
-      .servicesList{
+      .servicesList {
         flex-direction: column;
         gap: 20px;
         margin-bottom: 0;
+        margin-top: 60px;
       }
 
-      .curve {
-        display: none;
+      .portfolio {
+        padding-top: 70px;
+      }
+
+      .bannerClients>marquee>img {
+        width: 70px;
+        height: 70px;
       }
     }
 
@@ -370,43 +399,51 @@
 <body>
   <section>
     <div class="top-header">
-      <h1>Lorenzo Del Gaudio</h1>
+      <h1 style="padding:0; margin: 0;">Lorenzo Del Gaudio</h1>
+      <h2 style="margin-bottom: 30px;">Freelance Web Developer 🏖️</h2>
       <div>
-        <a href="https://github.com/delgalaenza" title="github"><img src="github.png"
-            style="width: 50px; height: 50px; border-radius: 50%;" alt="github"></a>
+        <a href="https://github.com/delgalaenza" title="github"><img src="github.png" class="roundedImage"
+            alt="github"></a>
         <a href="https://www.linkedin.com/in/lorenzodelgaudio/" title="linkedin"><img src="linkedin.png"
-            style="width: 50px; height: 50px; border-radius: 50%;" alt="linkedin"></a>
-<!--         <a href="https://www.instagram.com/lorenzo_delga/" title="instagram"><img src="instagram.jpeg"
-            style="width: 50px; height: 50px; border-radius: 50%;" alt="instagram"></a> -->
-            <a href="mailto: laenza98@gmail.com" title="email"><img src="email.png"
-              style="width: 50px; height: 50px; border-radius: 50%;" alt="email"></a>
-        <a href="cv.pdf" download title="resume"><img src="cv.png"
-            style="width: 50px; height: 50px; border-radius: 50%;" alt="resume"></a>
+            class="roundedImage" alt="linkedin"></a>
+        <a href="mailto: laenza98@gmail.com" title="email"><img src="email.png" class="roundedImage" alt="email"></a>
+        <a href="cv.pdf" download title="resume"><img src="cv.png" class="roundedImage" alt="resume"></a>
       </div>
     </div>
-    <h2>Freelance Web Developer 🏖️</h2>
-      <ul  class="servicesList" class="slide-in">
-        <li>Websites</li>
-        <li>Web applications</li>
-        <li>Mobile applications</li>
-        <li>Consultancy</li>
-      </ul>
+    <ul class="servicesList" class="slide-in">
+      <li>Websites</li>
+      <li>Web applications</li>
+      <li>Mobile applications</li>
+      <li>Consultancy</li>
+    </ul>
     <div class="profile">
       <img src="steaker.webp" class="slide-in" alt="steaker">
-      <div class="fade-in"> 
+      <div class="fade-in">
         <a href="https://wa.me/+393393319673/?text=Hi+Lorenzo,+I+contact+you+for..."> <span
-          class="material-symbols-outlined">
-          mode_comment
-        </span></a>
+            class="material-symbols-outlined">
+            mode_comment
+          </span></a>
       </div>
     </div>
-<!--     <div class="curve"></div> -->
+    <div class="curve"></div>
   </section>
 
-<!--   <section class="portfolio">
-    <h1 class="works">works</h1>
-    <p>In progress...</p>
-  </section> -->
+  <section class="portfolio">
+    <div class="clients">
+      <h1>My Clients</h1>
+      <div class="bannerClients">
+        <marquee direction="left" scrollamount="5">
+          <img src="omec_srl_logo.jpg" class="roundedImage" alt="omec_srl_logo">
+          <img src="humarker.jpg" class="roundedImage" alt="humarker">
+          <img src="bancobpm_logo.jpg" class="roundedImage" alt="bancobpm_logo">
+          <img src="dv.jpg" class="roundedImage" alt="dv">
+          <img src="xm.jpg" class="roundedImage" alt="xm">
+          <img src="dynamite.png" class="roundedImage" alt="dynamite">
+          <img src="federkombat.png" class="roundedImage" alt="federkombat">
+        </marquee>
+      </div>
+    </div>
+  </section>
 </body>
 
 </html>
